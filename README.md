@@ -1,7 +1,8 @@
-# docker-hugo
-Docker image with hugo
+# Docker image with hugo
 
-Create account on https://circleci.com use Your github account. 
+## Github -> CircleCi -> Docker hub
+Create account on https://circleci.com (use Your github account).
+
 Install circlecli cli 
 
 ```bash
@@ -13,14 +14,21 @@ or
 curl -fLSs https://circle.ci/cli | DESTDIR=/opt/bin bash
 ``` 
 
-Create deploy script in .circleci/config.yml
+Write deploy script in .circleci/config.yml and Dockerfile
 
-Validate it
+Validate circleci script
 ```bash
 circleci config validate
 ```
-Write Dockerfile
 
-Push it to github
+Push code to github.
 
-Go to https://circleci.com Add project and build it
+In order to build image using circleci and push it on docker hub:
+
+1. If You don't have account on https://hub.docker.com/ - create it.
+
+2. Go to https://circleci.com Add project from github.
+
+3. In project settings set DOCKER_USERNAME and DOCKER_PASSWORD for https://hub.docker.com/
+
+Push changes to github se how circleci builded and deployed image to docker hub.

@@ -12,11 +12,7 @@ LABEL org.label-schema.description="Hugo image"
 LABEL org.label-schema.vcs-url="https://github.com/MirzaAbazovic/programiraj.ba"
 LABEL org.label-schema.version=$BUILD_VERSION
 
-
 ENV HUGO_DOWNLOAD_URL=https://github.com/gohugoio/hugo/releases/download/v0.53/hugo_extended_0.53_Linux-64bit.tar.gz
-
-
-COPY deploy.sh deploy.sh
 
 RUN apk add --no-cache \
 		bash \
@@ -36,5 +32,4 @@ RUN apk add --no-cache \
 RUN wget $HUGO_DOWNLOAD_URL && \
 	tar xzf hugo_extended_0.53_Linux-64bit.tar.gz && \
 	mv hugo /usr/bin/hugo && \
-	rm hugo_extended_0.53_Linux-64bit.tar.gz LICENSE README.md \
-    ./deploy.sh
+	rm hugo_extended_0.53_Linux-64bit.tar.gz LICENSE README.md 
