@@ -32,3 +32,6 @@ In order to build image using circleci and push it on docker hub:
 3. In project settings set DOCKER_USERNAME and DOCKER_PASSWORD for https://hub.docker.com/
 
 Push changes to github se how circleci builded and deployed image to docker hub.
+
+
+[![CircleCI](https://circleci.com/gh/MirzaAbazovic/programiraj.ba/tree/master.svg?style=svg)](https://circleci.com/gh/MirzaAbazovic/programiraj.ba/tree/master)
