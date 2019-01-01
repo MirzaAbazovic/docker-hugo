@@ -33,4 +33,7 @@ In order to build image using circleci and push it on docker hub:
 
 Push changes to github se how circleci builded and deployed image to docker hub.
 
+This image is on https://hub.docker.com/r/abazovic/hugo
+
+
 [![CircleCI](https://circleci.com/gh/MirzaAbazovic/docker-hugo.svg?style=svg)](https://circleci.com/gh/MirzaAbazovic/docker-hugo)
